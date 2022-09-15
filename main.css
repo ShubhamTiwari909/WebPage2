@@ -71,6 +71,7 @@ header {
     bottom: 0;
     margin: 0 auto;
     width: 1100px;
+    height:70px;
     z-index: 10;
     font-family: 'Roboto', sans-serif;
 }
@@ -267,10 +268,6 @@ header {
     left: 35px;
 }
 
-img{
-    filter: grayscale(100%);
-
-}
 
 /* first container first element */
 .first--element {
@@ -301,7 +298,6 @@ img{
 .first--element--image {
     width: 40px;
     height: 40px;
-    filter: contrast(200%);
 }
 
 
@@ -489,12 +485,13 @@ img{
 .benefits--container {
     background-image: linear-gradient(to top,
             rgba(7, 26, 46, 0.10) -30%,
-            rgba(24, 79, 136, 0.3)), url("./Benefits.jpg");
+            rgba(24, 79, 136, 0.3)), url("https://dl.dropboxusercontent.com/s/kggvixp3n7jzkk7/Benefits.jpg?dl=0");
     height: 650px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 180px 0 0 0;
     position: relative;
+    filter: hue-rotate(360deg);
 }
 
 
@@ -812,6 +809,9 @@ img{
     background-color: var(--primary-light-grey);
     position: relative;
     left: 55px;
+}
+.about--us--second--element--image {
+    filter: contrast(200%);
 }
 
 .about--us--add--icon {
