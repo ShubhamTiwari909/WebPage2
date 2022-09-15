@@ -14,6 +14,37 @@
 }
 
 
+.position--center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.btn--sm {
+    width: 167px;
+    padding: 17px 27px 18px 29px;
+    border-radius: 4px;
+    margin: 0;
+    text-align: center;
+}
+
+.btn--md {
+    width: 337px;
+    padding: 20px 39px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0;
+}
+
+.btn--lg {
+    width: 390px;
+    padding: 20px 51px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0;
+}
 
 /* Header part start here */
 
@@ -41,14 +72,12 @@ header {
     margin: 0 auto;
     width: 1100px;
     z-index: 10;
-    height: 100px;
     font-family: 'Roboto', sans-serif;
 }
 
 .primary-navigation-logo {
     float: left;
     width: 132px;
-    height: 22px;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: 600;
@@ -76,13 +105,9 @@ header {
 
 /* Third link */
 .primary-link:nth-child(3) {
-    width: 167px;
-    height: 56px;
-    padding: 17px 27px 18px 29px;
-    border-radius: 4px;
+
     box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
     background-color: var(--primary-yellow);
-    margin: 0;
 }
 
 .nav--link {
@@ -114,16 +139,9 @@ header {
     color: var(--white);
 }
 
-.header-description {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .header-primary-title {
     width: 1100px;
-    height: 110px;
     text-shadow: 0 0 30px rgba(13, 37, 62, 1);
     font-family: 'Roboto', sans-serif;
     font-size: 45px;
@@ -139,22 +157,15 @@ header {
     margin: 57px 0 0 0;
 }
 
-.btn {
-    width: 337px;
-    height: 64px;
-    padding: 20px 39px;
-    text-decoration: none;
-}
 
 .btn-blue {
-    border-radius: 4px;
+    text-decoration: none;
     box-shadow: 0 0 30px 0 rgba(30, 136, 245, 0.9);
     background-color: var(--primary-blue);
 }
 
 .btn-link {
-    width: 259px;
-    height: 24px;
+    display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -171,13 +182,11 @@ header {
 
 /* main content */
 .main--content--headings {
-    margin: 130px 0 70px 0;
+    margin: 0 0 70px 0;
     max-width: 1100px;
-    margin: 130px auto 71px;
 }
 
 .main--content--primary--heading {
-    height: 44px;
     margin: 0 0 27px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
@@ -187,7 +196,6 @@ header {
 }
 
 .main--content--secondary--heading {
-    height: 60px;
     margin: 0;
     opacity: 0.4;
     font-family: 'Roboto', sans-serif;
@@ -208,6 +216,7 @@ header {
 
 .first--container {
     position: relative;
+    margin: 130px auto 71px;
 }
 
 
@@ -223,7 +232,6 @@ header {
 .second--element--primary-text,
 .third--element--primary-text {
     width: 221px;
-    height: 33px;
     margin: 0 0 4px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
@@ -235,7 +243,6 @@ header {
 .second--element--secondary-text,
 .third--element--secondary-text {
     width: 219px;
-    height: 60px;
     margin: 4px 0 0 0;
     opacity: 0.4;
     font-family: 'Roboto', sans-serif;
@@ -251,7 +258,6 @@ header {
 .second--element--image--container,
 .third--element--image--container {
     width: 150px;
-    height: 150px;
     margin: 33px 0 0 0;
     padding: 45px 56px 52px 48px;
     border: solid 6px var(--white);
@@ -261,17 +267,19 @@ header {
     left: 35px;
 }
 
+img{
+    filter: grayscale(100%);
 
+}
 
 /* first container first element */
 .first--element {
     width: 220px;
-    transform: translateX(50px)
+    transform: translateX(50px);
 }
 
 .first--element--text {
     width: 186px;
-    height: 33px;
     margin: 29px 0 35px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
@@ -282,7 +290,6 @@ header {
 
 .first--element--image--container {
     width: 150px;
-    height: 150px;
     margin: 33px 0 48px;
     padding: 52px 54px 52px 50px;
     border: solid 6px var(--white);
@@ -294,6 +301,7 @@ header {
 .first--element--image {
     width: 40px;
     height: 40px;
+    filter: contrast(200%);
 }
 
 
@@ -482,7 +490,7 @@ header {
     background-image: linear-gradient(to top,
             rgba(7, 26, 46, 0.10) -30%,
             rgba(24, 79, 136, 0.3)), url("./Benefits.jpg");
-    height: 100vh;
+    height: 650px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 180px 0 0 0;
@@ -496,7 +504,7 @@ header {
     top: 40%;
     left: 15%;
     transform: translateY(-40%);
-   
+
 }
 
 .benefits--container--left--title {
@@ -512,17 +520,13 @@ header {
 
 .benefits--container--left-link {
     position: absolute;
-    width: 337px;
-    height: 64px;
     top: 150px;
     padding: 20px 39px;
-    border-radius: 4px;
     box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
     background-color: var(--primary-yellow);
     color: var(--white);
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
 }
 
 
@@ -571,7 +575,7 @@ header {
 .right--dotted--line,
 .left--dotted--line {
     position: absolute;
-    top: 63%;
+    top: 80.5%;
     left: 10%;
     width: 100%;
     height: 150px;
@@ -640,9 +644,6 @@ header {
 }
 
 .price--card--header--description {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -40%);
 }
 
@@ -683,9 +684,9 @@ header {
 
 /* price card content */
 .price--card--content {
-    width: 410px;
+    width: 450px;
     border-radius: 4px;
-    margin: 60px 0 100px 60px;
+    padding: 60px 0 100px 50px;
 }
 
 .price--section--benefits--list {
@@ -735,15 +736,12 @@ header {
 
 .price--card--footer {
     width: 390px;
+    padding: 0 0 75px 0;
     margin: 0 auto;
 }
 
 .price--card--footer--button {
     margin: 0 0 60px 0;
-    width: 390px;
-    height: 64px;
-    padding: 20px 51px;
-    border-radius: 4px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 500;
