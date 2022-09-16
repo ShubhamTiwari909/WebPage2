@@ -156,10 +156,6 @@ header {
 }
 
 
-.btn-container {
-    margin: 57px 0 0 0;
-}
-
 
 .btn-blue {
     text-decoration: none;
@@ -176,6 +172,7 @@ header {
     font-weight: 500;
     letter-spacing: 1px;
     color: var(--white);
+    margin: 57px 0 0 0;
 }
 
 /* HEADER BANNER styling end here */
@@ -187,11 +184,11 @@ header {
 
 /* main content */
 .main--content--headings {
-    margin:130px auto 0;
+    margin:130px auto 70px;
     max-width: 1100px;
 }
 
-.main--content--primary--heading {
+.primary--heading {
     margin: 0 0 27px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
@@ -200,7 +197,7 @@ header {
     color: var(--primary-dark-blue);
 }
 
-.main--content--secondary--heading {
+.secondary--heading {
     margin: 0;
     opacity: 0.4;
     font-family: 'Roboto', sans-serif;
@@ -343,21 +340,21 @@ header {
     margin-top: 130px;
 }
 
-.second--container--first--element,
-.second--container--second--element,
-.second--container--third--element {
+.sc--first--element,
+.sc--second--element,
+.sc--third--element {
     display: inline-block;
     width:calc((100% - 120px) / 3)
 }
 
 
 /* second container first element */
-.second--container--first--element {
+.sc--first--element {
     position: relative;
     margin-right: 60px;
 }
 
-.second--container--first--element--image--container {
+.sc--first--element--image--container {
     width: 150px;
     height: 150px;
     margin: 0 0 33px 0;
@@ -369,7 +366,7 @@ header {
 }
 
 
-.second--container--first--element--add--icon {
+.sc--first--element--add--icon {
     position: absolute;
     top: 10px;
     left: 110px;
@@ -383,7 +380,7 @@ header {
 }
 
 
-.second--container--first--element--primary-text {
+.sc--first--element--primary-text {
     width: 221px;
     height: 33px;
     margin: 4 0 0 0;
@@ -394,7 +391,7 @@ header {
     color: var(--primary-dark-blue);
 }
 
-.second--container--first--element--secondary-text {
+.sc--first--element--secondary-text {
     width: 219px;
     height: 60px;
     margin: 4px 0 0 0;
@@ -411,11 +408,11 @@ header {
 
 
 /* second container second element */
-.second--container--second--element {
+.sc--second--element {
     margin-right: 60px;
 }
 
-.second--container--second--element--primary-text {
+.sc--second--element--primary-text {
     width: 221px;
     height: 33px;
     margin: 0 0 4px 0;
@@ -426,7 +423,7 @@ header {
     color: var(--primary-dark-blue);
 }
 
-.second--container--second--element--secondary-text {
+.sc--second--element--secondary-text {
     width: 219px;
     height: 60px;
     margin: 4px 0 0 0;
@@ -441,7 +438,7 @@ header {
 
 
 
-.second--container--second--element--image--container {
+.sc--second--element--image--container {
     width: 150px;
     height: 150px;
     margin: 0 0 33px 0;
@@ -455,11 +452,11 @@ header {
 
 
 /* second container third element */
-.second--container--third--element {
+.sc--third--element {
     position: absolute;
 }
 
-.second--container--third--element--text {
+.sc--third--element--text {
     width: 186px;
     margin: 33px 0 0 0;
     font-family: 'Roboto', sans-serif;
@@ -469,7 +466,7 @@ header {
     color: var(--primary-blue);
 }
 
-.second--container--third--element--image--container {
+.sc--third--element--image--container {
     width: 150px;
     height: 150px;
     margin: 0;
@@ -482,7 +479,7 @@ header {
     left: 35px;
 }
 
-.second--container--third--element--image {
+.sc--third--element--image {
     width: 40px;
     height: 40px;
 }
@@ -494,7 +491,7 @@ header {
 .right--dotted--line,
 .left--dotted--line {
     position: absolute;
-    top: 75.8%;
+    top: 60%;
     left: 10%;
     width: 100%;
     height: 170px;
@@ -510,8 +507,8 @@ header {
 }
 
 .left--dotted--line {
-    top: 107.6%;
-    left: -11%;
+    top: 110%;
+    left: -10%;
     border-top: 4px dotted var(--secondary-light-grey);
     border-left: 4px dotted var(--secondary-light-grey);
     border-bottom: 4px dotted var(--secondary-light-grey);
@@ -575,7 +572,7 @@ header {
     transform: translateY(-55px)
 }
 
-.benefits--container--box {
+.benefits {
     width: 500px;
     height: 230px;
     margin: 20px 0 0 0;
@@ -585,7 +582,7 @@ header {
     background-color: var(--white);
 }
 
-.benefits--container--box--title {
+.benefits--title {
     width: 150px;
     height: 35px;
     margin: 0 0 21px 0;
@@ -595,7 +592,7 @@ header {
     color: var(--primary-dark-blue);
 }
 
-.benefits--container--box--paragraph {
+.benefits--paragraph {
     width: 402px;
     height: 64px;
     margin: 21px 0 0;
@@ -618,45 +615,45 @@ header {
     margin: 100px auto 0;
 }
 
-.price--card {
+.price {
     width: 500px;
     box-shadow: 0 20px 60px 10px rgba(13, 37, 62, 0.05);
     border: solid 1px #eee;
     border-radius: 4px;
 }
 
-.price--card--one,
-.price--card--two {
+.price--one,
+.price--two {
     display: inline-block
 }
 
-.price--card--one {
+.price--one {
     margin: 0 60px 0 0;
 }
 
 /* price card header */
-.price--card--header {
+.price--header {
     position: relative;
     width: 500px;
     height: 280px;
     border-radius: 4px;
 }
 
-.price--card--header--blue {
+.price--header--blue {
     box-shadow: 0 2px 30px 0 rgba(30, 136, 245, 0.3);
     background-color: var(--primary-blue);
 }
 
-.price--card--header--yellow {
+.price--header--yellow {
     box-shadow: 0 2px 30px 0 rgba(255, 204, 1, 0.3);
     background-color: var(--primary-yellow);
 }
 
-.price--card--header--description {
+.price--header--description {
     transform: translate(-50%, -40%);
 }
 
-.price--card--title {
+.price--title {
     height: 33px;
     margin: 0 0 8px;
     font-family: 'Roboto', sans-serif;
@@ -667,7 +664,7 @@ header {
     color: var(--white);
 }
 
-.price--card--value {
+.price--value {
     height: 71px;
     margin: 8px 0 0 0;
     font-family: 'Roboto', sans-serif;
@@ -678,7 +675,7 @@ header {
     color: var(--white);
 }
 
-.price--card--validity {
+.price--validity {
     width: 200px;
     height: 30px;
     margin: 25px;
@@ -692,17 +689,17 @@ header {
 
 
 /* price card content */
-.price--card--content {
+.price--content {
     width: 450px;
     border-radius: 4px;
     padding: 60px 0 100px 50px;
 }
 
-.price--section--benefits--list {
+.price--list {
     list-style-type: none;
 }
 
-.price--section--benefit--blue,.price--section--benefit--yellow {
+.price--blue,.price--yellow {
     margin: 0 0 48px 0;
     opacity: 0.9;
     font-family: 'Roboto', sans-serif;
@@ -718,7 +715,7 @@ header {
 }
 
 
-.price--section--benefit--yellow{
+.price--yellow{
     background-size: 8%;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5G2yrvbNfLWEdr1oEARvmpmS1n-KpzvHLU_04tUM9DdMTnm3Td6MGo-ZX6orEJ0nEpo&usqp=CAU");
 
@@ -727,13 +724,13 @@ header {
 
 /* price card footer */
 
-.price--card--footer {
+.price--footer {
     width: 390px;
     padding: 0 0 75px 0;
     margin: 0 auto;
 }
 
-.price--card--footer--button {
+.price--footer--button {
     margin: 0 0 60px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -743,17 +740,17 @@ header {
     text-decoration: none;
 }
 
-.price--card--footer--button--blue {
+.price--footer--button--blue {
     background-color: var(--primary-blue);
 }
-.price--card--footer--button--blue:hover{
+.price--footer--button--blue:hover{
     box-shadow: 0 0 20px 0 rgba(30, 136, 245, 0.4);
 }
 
-.price--card--footer--button--yellow {
+.price--footer--button--yellow {
     background-color: var(--primary-yellow);
 }
-.price--card--footer--button--yellow:hover{
+.price--footer--button--yellow:hover{
     box-shadow: 0 2px 30px 0 rgba(255, 204, 1, 0.3);
 }
 
@@ -768,14 +765,14 @@ header {
 }
 
 /* common styling */
-.about--us--first--element,
-.about--us--second--element,
-.about--us--third--element {
+.about--first--element,
+.about--second--element,
+.about--third--element {
     display: inline-block;
     width:calc((100% - 170px) / 3);
 }
 
-.about--us--primary-text {
+.about--primary-text {
     width: 259px;
     height: 33px;
     margin: 4 0 0 0;
@@ -786,7 +783,7 @@ header {
     color: var(--primary-dark-blue);
 }
 
-.about--us--secondary-text {
+.about--secondary-text {
     width: 259px;
     height: 90px;
     margin: 4px 0 0 0;
@@ -800,7 +797,7 @@ header {
 }
 
 
-.about--us--image--container {
+.about--image--container {
     width: 150px;
     height: 150px;
     margin: 0 0 33px 0;
@@ -811,11 +808,11 @@ header {
     position: relative;
     left: 55px;
 }
-.about--us--second--element--image {
+.about--second--element--image {
     filter: contrast(200%);
 }
 
-.about--us--add--icon {
+.about--add--icon {
     position: absolute;
     top: 10px;
     left: 160px;
@@ -828,8 +825,8 @@ header {
     color: var(--white);
 }
 
-.about--us--first--element,
-.about--us--third--element {
+.about--first--element,
+.about--third--element {
     position: relative;
 }
 
@@ -837,7 +834,7 @@ header {
 
 
 /* about us second element */
-.about--us--first--element,.about--us--second--element {
+.about--first--element,.about--second--element {
     margin-right:80px
 }
 
