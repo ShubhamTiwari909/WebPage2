@@ -14,6 +14,9 @@
 }
 
 
+li{
+    list-style-type:none;
+}
 .position--center {
     position: absolute;
     top: 50%;
@@ -68,10 +71,8 @@ header {
     right: 0;
     left: 0;
     top: 60px;
-    bottom: 0;
     margin: 0 auto;
     width: 1100px;
-    height:70px;
     z-index: 10;
     font-family: 'Roboto', sans-serif;
 }
@@ -106,9 +107,10 @@ header {
 
 /* Third link */
 .primary-link:nth-child(3) {
-
-    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
     background-color: var(--primary-yellow);
+}
+.primary-link:nth-child(3):hover{
+    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
 }
 
 .nav--link {
@@ -161,8 +163,10 @@ header {
 
 .btn-blue {
     text-decoration: none;
-    box-shadow: 0 0 30px 0 rgba(30, 136, 245, 0.9);
     background-color: var(--primary-blue);
+}
+.btn-blue:hover{
+    box-shadow: 0 0 30px 0 rgba(30, 136, 245, 0.9);
 }
 
 .btn-link {
@@ -183,7 +187,7 @@ header {
 
 /* main content */
 .main--content--headings {
-    margin: 0 0 70px 0;
+    margin:130px auto 0;
     max-width: 1100px;
 }
 
@@ -273,7 +277,6 @@ header {
 
 /* first container first element */
 .first--element {
-    transform: translateX(50px);
     margin-right: 55px;
 }
 
@@ -300,6 +303,7 @@ header {
 .first--element--image {
     width: 40px;
     height: 40px;
+    filter:grayscale(100%);
 }
 
 
@@ -362,14 +366,13 @@ header {
     border-radius: 50%;
     background-color: var(--primary-light-grey);
     position: relative;
-    left: 35px;
 }
 
 
 .second--container--first--element--add--icon {
     position: absolute;
-    top: 20px;
-    left: 150px;
+    top: 10px;
+    left: 110px;
     width: 40px;
     height: 40px;
     padding: 11px 10px 12px 15px;
@@ -556,13 +559,14 @@ header {
     position: absolute;
     top: 150px;
     padding: 20px 39px;
-    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
     background-color: var(--primary-yellow);
     color: var(--white);
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
-
+.benefits--container--left-link:hover{
+    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
+}
 
 /* benefits--container--right */
 .benefits--container--right {
@@ -611,7 +615,7 @@ header {
 /* price section */
 .price--section {
     max-width: 1080px;
-    margin: 100px auto 145px;
+    margin: 100px auto 0;
 }
 
 .price--card {
@@ -710,10 +714,7 @@ header {
     background-size: 11%;
     background-repeat: no-repeat;
     background-position: left;
-}
-
-.price--section--benefit--text {
-    transform: translateX(80px)
+    padding: 0 0 0 60px;
 }
 
 
@@ -743,13 +744,17 @@ header {
 }
 
 .price--card--footer--button--blue {
-    box-shadow: 0 0 20px 0 rgba(30, 136, 245, 0.4);
     background-color: var(--primary-blue);
+}
+.price--card--footer--button--blue:hover{
+    box-shadow: 0 0 20px 0 rgba(30, 136, 245, 0.4);
 }
 
 .price--card--footer--button--yellow {
-    box-shadow: 0 2px 30px 0 rgba(255, 204, 1, 0.3);
     background-color: var(--primary-yellow);
+}
+.price--card--footer--button--yellow:hover{
+    box-shadow: 0 2px 30px 0 rgba(255, 204, 1, 0.3);
 }
 
 
@@ -759,7 +764,7 @@ header {
 /* About Us */
 
 .about--us {
-    margin: 140px auto 220px;
+    margin: 140px auto 0;
 }
 
 /* common styling */
@@ -812,8 +817,8 @@ header {
 
 .about--us--add--icon {
     position: absolute;
-    top: 20px;
-    left: 150px;
+    top: 10px;
+    left: 160px;
     width: 40px;
     height: 40px;
     padding: 11px 10px 12px 15px;
@@ -844,7 +849,7 @@ header {
 
 .footer--container {
     width: 1150px;
-    margin: 80px auto;
+    margin:230px auto 0;
 }
 
 .footer--logo {
