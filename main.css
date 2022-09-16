@@ -698,33 +698,14 @@ header {
     font-weight: 300;
     line-height: 1.36;
     color: var(--primary-dark-blue);
+    background-image: url("https://cdn1.vectorstock.com/i/thumb-large/15/05/green-tick-checkmark-icon-vector-22691505.jpg");
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .price--section--benefit--text {
-    display: inline-block;
-}
-
-
-
-/* ✔ tick stylings */
-.blue--tick,
-.yellow--tick {
-    display: inline-block;
-    width: 24px;
-    height: 16px;
-    margin: 7px 30px 7px 0;
-}
-
-.blue--tick {
-    color: var(--primary-blue)
-}
-
-.yellow--tick {
-    color: var(--primary-yellow)
-}
-
-.last--tick {
-    transform: translateY(-30px)
+    transform: translateX(80px)
 }
 
 
