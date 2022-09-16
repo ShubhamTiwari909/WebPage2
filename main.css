@@ -217,7 +217,7 @@ header {
 
 .first--container {
     position: relative;
-    margin: 130px auto 71px;
+    margin: 130px auto 0;
 }
 
 
@@ -226,6 +226,7 @@ header {
 .second--element,
 .third--element {
     display: inline-block;
+    width:calc(100%/3 - 82.7.px)
 }
 
 
@@ -259,6 +260,7 @@ header {
 .second--element--image--container,
 .third--element--image--container {
     width: 150px;
+    height:150px;
     margin: 33px 0 0 0;
     padding: 45px 56px 52px 48px;
     border: solid 6px var(--white);
@@ -271,22 +273,21 @@ header {
 
 /* first container first element */
 .first--element {
-    width: 220px;
     transform: translateX(50px);
 }
 
 .first--element--text {
-    width: 186px;
+    width: 221px;
     margin: 29px 0 35px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 300;
-    text-align: center;
     color: var(--primary-blue);
 }
 
 .first--element--image--container {
     width: 150px;
+    height: 150px;
     margin: 33px 0 48px;
     padding: 52px 54px 52px 50px;
     border: solid 6px var(--white);
@@ -334,13 +335,14 @@ header {
 
 /* second container */
 .second--container {
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 .second--container--first--element,
 .second--container--second--element,
 .second--container--third--element {
     display: inline-block;
+    width:calc(100%/3 - 82.7)
 }
 
 
@@ -481,6 +483,39 @@ header {
 }
 
 
+
+
+
+.right--dotted--line,
+.left--dotted--line {
+    position: absolute;
+    top: 75.8%;
+    left: 10%;
+    width: 100%;
+    height: 170px;
+    z-index: -1;
+}
+
+.right--dotted--line {
+    border-top: 4px dotted var(--secondary-light-grey);
+    border-right: 4px dotted var(--secondary-light-grey);
+    border-bottom: 4px dotted var(--secondary-light-grey);
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+
+.left--dotted--line {
+    top: 107.6%;
+    left: -11%;
+    border-top: 4px dotted var(--secondary-light-grey);
+    border-left: 4px dotted var(--secondary-light-grey);
+    border-bottom: 4px dotted var(--secondary-light-grey);
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+}
+
+
+
 /* Benefits section */
 .benefits--container {
     background-image: linear-gradient(to top,
@@ -567,35 +602,6 @@ header {
 }
 
 
-
-
-.right--dotted--line,
-.left--dotted--line {
-    position: absolute;
-    top: 80.5%;
-    left: 10%;
-    width: 100%;
-    height: 150px;
-    z-index: -1;
-}
-
-.right--dotted--line {
-    border-top: 4px dotted var(--secondary-light-grey);
-    border-right: 4px dotted var(--secondary-light-grey);
-    border-bottom: 4px dotted var(--secondary-light-grey);
-    border-top-right-radius: 70px;
-    border-bottom-right-radius: 70px;
-}
-
-.left--dotted--line {
-    top: 107.6%;
-    left: -10%;
-    border-top: 4px dotted var(--secondary-light-grey);
-    border-left: 4px dotted var(--secondary-light-grey);
-    border-bottom: 4px dotted var(--secondary-light-grey);
-    border-top-left-radius: 70px;
-    border-bottom-left-radius: 70px;
-}
 
 
 
@@ -690,7 +696,7 @@ header {
     list-style-type: none;
 }
 
-.price--section--benefit {
+.price--section--benefit--blue,.price--section--benefit--yellow {
     margin: 0 0 48px 0;
     opacity: 0.9;
     font-family: 'Roboto', sans-serif;
@@ -698,8 +704,8 @@ header {
     font-weight: 300;
     line-height: 1.36;
     color: var(--primary-dark-blue);
-    background-image: url("https://cdn1.vectorstock.com/i/thumb-large/15/05/green-tick-checkmark-icon-vector-22691505.jpg");
-    background-size: 10%;
+    background-image: url("https://t3.ftcdn.net/jpg/02/58/05/82/360_F_258058291_7YJxH8yh9tpd9WUrbBLYiMg27OTcafAY.jpg");
+    background-size: 11%;
     background-repeat: no-repeat;
     background-position: left;
 }
@@ -708,6 +714,12 @@ header {
     transform: translateX(80px)
 }
 
+
+.price--section--benefit--yellow{
+    background-size: 8%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5G2yrvbNfLWEdr1oEARvmpmS1n-KpzvHLU_04tUM9DdMTnm3Td6MGo-ZX6orEJ0nEpo&usqp=CAU");
+
+}
 
 
 /* price card footer */
@@ -746,6 +758,7 @@ header {
 
 .about--us {
     margin: 140px auto 220px;
+    border: 1px solid black;
 }
 
 /* common styling */
@@ -753,6 +766,7 @@ header {
 .about--us--second--element,
 .about--us--third--element {
     display: inline-block;
+    width:calc(100%/3 - 56px)
 }
 
 .about--us--primary-text {
