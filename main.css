@@ -523,7 +523,7 @@ header {
 
 .left--dotted--line {
     top: 366px;
-    left: -98px;
+    left: -96px;
     border-top: 4px dotted var(--secondary-light-grey);
     border-left: 4px dotted var(--secondary-light-grey);
     border-bottom: 4px dotted var(--secondary-light-grey);
