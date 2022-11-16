@@ -91,7 +91,6 @@ header {
 
 .primary-navigation-logo {
     float: left;
-    width: 132px;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: 600;
@@ -612,9 +611,6 @@ header {
 }
 
 .benefits--paragraph {
-    width: 402px;
-    height: 64px;
-    margin: 21px 0 0;
     opacity: 0.4;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -761,6 +757,7 @@ header {
     letter-spacing: 1px;
     color: var(--white);
     text-decoration: none;
+    display: inline-block;
 }
 
 .price--footer--button--blue {
